@@ -15,13 +15,11 @@ import { ImageService } from './image.service';
 import { ConvertDto } from './dto/convert.dto';
 import { ResizeDto } from './dto/resize.dto';
 import { CompressDto } from './dto/compress.dto';
-import { diskStorage } from 'multer';
-import { extname } from 'path';
-import { v4 as uuid } from 'uuid';
+
 import { imageUploadOptions } from 'src/image/helpers/upload.helper';
 import { getContentType } from 'src/image/helpers/get-content-type.helper';
 
-@Controller('image')
+@Controller('api/v1/image')
 export class ImageController {
   constructor(private readonly imageService: ImageService) {}
 
