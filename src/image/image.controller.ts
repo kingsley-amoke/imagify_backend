@@ -19,7 +19,7 @@ import { CompressDto } from './dto/compress.dto';
 import { imageUploadOptions } from 'src/image/helpers/upload.helper';
 import { getContentType } from 'src/image/helpers/get-content-type.helper';
 
-@Controller('api/v1/image')
+@Controller('image')
 export class ImageController {
   constructor(private readonly imageService: ImageService) {}
 
